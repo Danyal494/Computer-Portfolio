@@ -79,7 +79,7 @@ export function Setup(props) {
             >
            
             
-              <iframe src='https://3-d-portfolio-rose.vercel.app/' />
+              <iframe src='https://3-d-portfolio-liard-five.vercel.app/' />
             </Html>
     </group>
   )

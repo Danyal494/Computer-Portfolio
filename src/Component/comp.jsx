@@ -93,7 +93,7 @@ const Comps = () => {
     
           
           <Setup roughness={0} onClick={handleClick} position={[0, -2, 0]}>
-            <Html
+            {/* <Html
               wrapperClass='pc'
               position={[-4.1, 9.5, -2.7]}
               distanceFactor={1.10}
@@ -104,7 +104,7 @@ const Comps = () => {
            
             
               <iframe src='https://my-portfolio-vert-psi-65.vercel.app/' />
-            </Html>
+            </Html> */}
           </Setup>
         
           <ContactShadows position={[0, -1.4, 0]} opacity={0.75} scale={10} blur={3} far={4} />
