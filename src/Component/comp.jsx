@@ -61,6 +61,7 @@ const Comps = () => {
     <div className='gg' style={{ width: "100vw", height: "100vh" }}>
       <h1 className='bg-white shadow-2xl text-black p-2 w-40 absolute z-10 left-3 top-3'>M.Danyal Khan</h1>
       <h1 className='bg-white shadow-2xl text-black p-2 w-40 absolute z-10 left-3 top-14'>Frontend Developer</h1>
+      {/* <h1 className='bg-white shadow-2xl text-black p-2 w-40 absolute z-10 left-3 top-[100px]'>Click on comp obj to zoom in</h1> */}
       <div className='flex bg-white shadow-2xl text-black  w-20 absolute z-10 left-3 top-[100px]'>
       <h2 className='p-2  ' > {showTime}</h2>
 
@@ -102,7 +103,7 @@ const Comps = () => {
             >
            
             
-              <iframe src='https://3-d-portfolio-rose.vercel.app/' />
+              <iframe src='https://my-portfolio-vert-psi-65.vercel.app/' />
             </Html>
           </Setup>
         
