@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { useSpring } from '@react-spring/three';
 import { Setup } from './Setup';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import Loader from './SuspenceLoader';
 
 
 const CameraAnimation = ({ isZoomed }) => {
@@ -73,6 +74,7 @@ const Comps = () => {
       <audio id="lostmojo" ref={audioRef} autoplay="autoplay">
     <source src="office.mp3" type="audio/mp3"/>
 </audio>
+
       <Canvas style={{ width: "100%", height: "100%" }} camera={{ position: [40, 30, 30], fov: 100 }}>
         <Stage environment="studio" intensity={0} preset="soft">
           <ambientLight intensity={0.2} />
@@ -90,7 +92,8 @@ const Comps = () => {
               <iframe src='https://webxpert.vercel.app/' />
             </Html>
           </primitive> */}
-    
+    <Suspense fallback={<Loader/>}>
+
           
           <Setup roughness={0} onClick={handleClick} position={[0, -2, 0]}>
             {/* <Html
@@ -100,12 +103,13 @@ const Comps = () => {
               transform
               rotation={[0, Math.PI / 2, 0]} 
               rotation-x={-0.01}
-            >
-           
-            
+              >
+              
+              
               <iframe src='https://my-portfolio-vert-psi-65.vercel.app/' />
-            </Html> */}
+              </Html> */}
           </Setup>
+              </Suspense>
         
           <ContactShadows position={[0, -1.4, 0]} opacity={0.75} scale={10} blur={3} far={4} />
           <pointLight position={[5, 5, 5]} intensity={0.5} />

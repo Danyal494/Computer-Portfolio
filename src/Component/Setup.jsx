@@ -4,12 +4,15 @@ Command: npx gltfjsx@6.2.18 setup.glb --transform
 Files: setup.glb [57.32MB] > D:\Blender files\GLBT Files\New folder\setup-transformed.glb [3.11MB] (95%)
 */
 
-import React, { useRef } from 'react'
+import React, {  useRef } from 'react'
 import { Html, useGLTF } from '@react-three/drei'
+
 
 export function Setup(props) {
   const { nodes, materials } = useGLTF('/setup-transformed.glb')
   return (
+    
+
     <group {...props} dispose={null}>
       <mesh geometry={nodes.aorus_logotranspa_aorus_logotranspa_0.geometry} material={materials['Material.074_24']} position={[-3.158, 8.63, -3.162]} scale={[0.086, 0.086, 0.091]} />
       <mesh geometry={nodes.BezierCircle_Material104_0.geometry} material={materials.PaletteMaterial001} position={[-0.458, 9.895, -2.826]} rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={0.057} />
@@ -76,12 +79,13 @@ export function Setup(props) {
               transform
               rotation={[0, Math.PI / 2, 0]} 
               rotation-x={-0.01}
-            >
+              >
            
             
               <iframe src='https://3-d-portfolio-liard-five.vercel.app/' />
             </Html>
     </group>
+            
   )
 }
 
